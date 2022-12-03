@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>수강신청페이지</title>
+<style>
+	body {
+		background-color:#fff; 
+	}
+	form fieldset{
+		margin-bottom:25px; 
+	}
+	form legend{
+		font-size:15px;
+		font-weight:600; 
+	}
+	form label.reg {
+		font-size:14px;
+		width:60px;
+		color:#390;
+		font-weight:bold;		
+		float:left;
+		text-align:right;
+		margin-right:10px;
+	}
+	form ul li{
+		list-style:none; 
+		margin: 15px 0;	
+		font-size:14px;	
+	} 
+	
+	#member, #stuffs {
+		width:50px; 
+	}
+</style>
+</head>
+<body>
+  </head>
+  <body>
+    <h1>동양미래 인공지능소프트웨어 수강신청</h1>
+  	<form method = post action = student.jsp>
+  		<fieldset id="register">
+  			<legend>학과선택</legend>
+  			<ul>
+  				<li>
+  					<label class="reg" for="uclass">학과</label>
+  					<select id="uclass" name="subject">
+  						<option value="생명화학공학과">생명화학공학과</option>
+  						<option value="빅데이터경영과">빅데이터경영과</option>
+  						<option value="인공지능소프트웨어과">인공지능소프트웨어과</option>
+  						<option value="전기공학과">전기공학과</option>
+  						<option value="로봇공학과" selected>로봇공학과</option>
+  						<option value="기계공학과">기계공학과</option>
+  					</select>
+  				</li>
+  			</ul>
+  		</fieldset>
+  		<fieldset id="register">
+  			<legend>신청자</legend>
+  			<ul>
+  				<li>
+  					<label class="reg" for="uname">이름</label>
+  					<input type="text" id="uname" name = "name">
+  				</li>
+  				<li>
+  					<label class="reg" for="uid">학번</label>
+  					<input type="text" id="uid" placeholder="하이픈없이 입력" maxlength="8" name = "number">
+  				</li>
+  				<li>
+  					<label class="reg" for="uclass">신청과목</label>
+  					<select id="uclass" name = "sub">
+  						<option value="인공신경망">인공신경망</option>
+  						<option value="오픈소프트웨어">오픈소프트웨어</option>
+  						<option value="웹프로그래밍">JSP 웹프로그래밍</option>
+  						<option value="데이터베이스">데이터베이스</option>
+  						<option value="데이터분석입문" selected>데이터분석입문</option>
+  						<option value="자바프로그래밍">자바프로그래밍</option>
+  					</select>
+  				</li>
+  			</ul>
+  		</fieldset>
+  		<fieldset>
+  			<button type="submit" value="submit">신청하기</button>
+  			<button type="reset" value="reset">다시쓰기</button>
+  		</fieldset>
+  	</form>
+</body>
+</html>
