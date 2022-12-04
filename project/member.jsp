@@ -5,20 +5,31 @@
 <head>
 <meta charset="UTF-8">
 <title>회원가입 페이지</title>
+<style>
+.size {
+	width: 150px;
+	height: 40px;
+}
+.input1{
+	width: 300px;
+	height: 50px;
+}
+</style>
 </head>
 <body>
-
-<h2>회원가입페이지</h2>
+<center>
+<h1>회원가입페이지</h1>
 <%@ page import="java.sql.*, javax.sql.*, javax.naming.*" %>
 	<form method ="post" action="">
 		
-		아이디 : <input type="text" name="mid"><p>
-		비밀번호 : <input type="text" name="mpwd"><p>
-		이름 : <input type="text" name="mname"><p>
-		<input type="submit" value="가입완료">
+		<input class="input1" type="text" name="mid" placeholder="아이디"><p>
+		<input class="input1" type="text" name="mpwd" placeholder="비밀번호"><p>
+		<input class="input1" type="text" name="mname" placeholder="이름"><p>
+		<input class="size" type="submit" value="가입완료">
+		<input class="size" type="button" value="돌아가기" onClick="location.href='login.jsp'">
 		
 		
-<hr><center>
+
 
 <%
 	String mid = request.getParameter("mid");
@@ -80,8 +91,8 @@
 	}
 %>
 	</table>
-</center>
 		
 	</form>
+</center>
 </body>
 </html>
