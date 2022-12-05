@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>커피주문페이지</title>
+<style>
+	body {
+		background-color:#fff; 
+	}
+	form fieldset{
+		margin-bottom:25px; 
+	}
+	form legend{
+		font-size:15px;
+		font-weight:600; 
+	}
+	form label.reg {
+		font-size:14px;
+		width:60px;
+		color:#57058d;
+		font-weight:bold;		
+		float:left;
+		text-align:right;
+		margin-right:10px;
+	}
+	form ul li{
+		list-style:none; 
+		margin: 15px 0;	
+		font-size:14px;	
+	} 
+	
+	#member, #stuffs {
+		width:50px; 
+	}
+</style>
+</head>
+<body>
+  </head>
+  <body>
+    <h1>커피주문페이지</h1>
+  	<form method = post action = menu.jsp>
+  		<fieldset id="register">
+  			<legend>주문자</legend>
+  			<ul>
+  				<li>
+  				<label class="reg" for="uclass">커피</label>
+  					<select id="uclass" name = "coffee">
+  						<option value="아메리카노">아메리카노</option>
+  						<option value="카페라떼">카페라떼</option>
+  						<option value="바닐라라떼">바닐라라떼</option>
+  						<option value="녹차라떼">녹차라떼</option>
+  					</select>
+  				</li>
+  				<li>
+  					<label class="reg" for="uid">사이즈</label>
+  					<input type="text" id="uid" name = "size">
+  				</li>
+  				<li>
+  					<label class="reg" for="uname">개수</label>
+  					<input type="text" id="uname" name = "count">
+  					</select>
+  				</li>
+  			</ul>
+  		</fieldset>
+  		<button type="submit" value="submit">주문하기</button>
+  		<button type="reset" value="reset">다시쓰기</button>
+  	</form>
+</body>
+</html>
