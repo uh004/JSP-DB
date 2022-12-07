@@ -26,19 +26,7 @@
 
 	<h1>주문하신 메뉴</h1>
 	<table border=1>
-	<%-- 
-		<tr bgcolor="#00FF00">
-			<td>커피 메뉴</td>
-			<td>커피 사이즈</td>
-			<td>커피 개수</td>
-		</tr>
-		<tr>
-			<td><jsp:getProperty name="cafe" property="coffee" /></td>
-			<td><jsp:getProperty name="cafe" property="size" /></td>
-			<td><jsp:getProperty name="cafe" property="count" /></td>
-		</tr>
-		--%>
-		<%
+<%
 	String mid = request.getParameter("coffee");
 	String mpwd = request.getParameter("size");
 	String mname = request.getParameter("count");
