@@ -23,12 +23,6 @@
 	<jsp:setProperty name="student" property="*" />
 
 	<h1>수강과목 신청결과</h1>
-	<%-- 
-		학생 학과 : <jsp:getProperty name="student" property="subject" /><br>
-		학생 이름 : <jsp:getProperty name="student" property="name" /><br>
-		학생 학번 : <jsp:getProperty name="student" property="number" /><br>
-		신청 과목 : <jsp:getProperty name="student" property="sub" /><br>
-	--%>	
 	<table border=1>
 		<tr bgcolor="#BoC4DE">
 			<td>학생 학과</td>
