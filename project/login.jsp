@@ -135,7 +135,7 @@
 	PreparedStatement pstmt = null;
 	String driverName = "com.mysql.jdbc.Driver";
 	String dbURL = "jdbc:mysql://localhost:3306/memberdb";
-	String sql = "select * from member infi where pwd=?";
+	String sql = "select * from member info where pwd=?";
 
 	
 	try{
